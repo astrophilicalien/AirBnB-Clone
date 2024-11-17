@@ -1,11 +1,13 @@
+import { Route, Router, Routes } from 'react-router-dom'
+import IndexPage from './components/IndexPage.jsx'
 import './App.css'
 
 function App() {
 
   return (
-    <div>
-      test
-    </div>
+      <Routes>
+        <Route path='/' element={<IndexPage />} />
+      </Routes>
   )
 }
 
